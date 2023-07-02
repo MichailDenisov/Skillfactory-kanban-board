@@ -6,7 +6,7 @@ function Header() {
 		<header className={css.header}>
 			<img className={css.logo} src={Logo} alt='' />
 			<h1 className={css.title}>Simple Kanban Board</h1>
-			<p className={css.sprint}>Sprint #2021.38</p>
+			<p className={css.sprint}>Sprint #2023.1.8</p>
 		</header>
 	)
 }

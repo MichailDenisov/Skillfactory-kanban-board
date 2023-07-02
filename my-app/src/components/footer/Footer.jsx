@@ -15,7 +15,7 @@ function Footer(props) {
 				})}
 			</div>
 			<div className={css.copy}>
-				Created by <a href='https://github.com/ytokarevskaya' target='_blank' rel='noreferrer'>@ytokarevskaya</a>
+				Created by <a href='https://github.com/MichailDenisov/Skillfactory-kanban-board.git' target='_blank' rel='noreferrer'>@MichailDenisov</a>
 			</div>
 		</footer>
 	)
