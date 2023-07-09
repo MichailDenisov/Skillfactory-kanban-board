@@ -1,4 +1,4 @@
-const formatDate = (stringDate) => {
+function formatDate(stringDate) {
 	const date = new Date(stringDate)
 	return date.toLocaleString('ru-RU')
 }

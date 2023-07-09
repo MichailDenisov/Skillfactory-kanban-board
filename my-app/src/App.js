@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
-import {BrowserRouter as Router} from 'react-router-dom'
+import { Route, BrowserRouter as Router, Routes  } from 'react-router-dom'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
+import Board from './components/board/Board'
+import TaskDetail from './components/task-detail/TaskDetail'
 import Main from './components/main/Main'
 
 function App() {
@@ -13,14 +15,23 @@ function App() {
 	}, [tasks])
 
   return (
+	
 		<div className='wrapper'>
 			<Router>
 				<Header />
-				<Main tasks={tasks} setTasks={setTasks} />
+				<Main>
+				<Routes>
+				<Route tasks={tasks} setTasks={<Main/>} />
+					<Route exact path='/'element={<Board {...tasks}{...setTasks}/>}/>
+		 			<Route path='/tasks/:taskId' element={ <TaskDetail {...tasks}{...setTasks}/> }/>
+		
+				{/* <Main tasks={tasks} setTasks={setTasks} /> */}
+				</Routes>
+				</Main>
 				<Footer tasks={tasks} />
 			</Router>
 		</div>
-  )
+  );
 }
 
 export default App

@@ -1,11 +1,15 @@
 .board {
 	display: flex;
 	flex-wrap: wrap;
+	  background: #0079BF;
+	  margin:  10px 0px auto 0px ;
+	
 }
 @media (max-width: 768px) {
 	.board {
 		display: flex;
 		justify-content: center;
-	
+		background: #0067A3;
 	}
+
 }

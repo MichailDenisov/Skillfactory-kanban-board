@@ -18,3 +18,13 @@
 .Profile {
 	margin-left: auto;
 }
+@media (max-width: 768px) {
+	.logo {
+		display: none
+		
+	}
+	 .title  {
+		color: #0067A3;
+	}
+
+}

@@ -1,5 +1,13 @@
 .main {
 	background: #0079BF;
+
 	padding: 20px;
 	flex-grow: 1;
+	
+}
+@media (max-width: 768px) {
+	.main {
+		background: #0067A3;
+	}
+
 }
