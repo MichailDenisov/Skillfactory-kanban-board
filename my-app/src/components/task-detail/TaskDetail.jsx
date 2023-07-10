@@ -45,7 +45,7 @@ const TaskDetail = (props) => {
 	const renderEmptyState = () => {
 		return (
 			<div className={css.emptyState}>
-				<h2>Task with ID <em>{taskId}</em> was not found</h2>
+				<h2>Task with ID <em>{ taskId }</em> was not found</h2>
 				<img className={css.emptyStateIcon} src={notFoundIcon} alt='' />
 			</div>
 		)

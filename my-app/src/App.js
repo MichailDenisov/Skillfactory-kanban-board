@@ -24,7 +24,6 @@ function App() {
 				<Route tasks={tasks} setTasks={<Main/>} />
 					<Route exact path='/'element={<Board {...tasks}{...setTasks}/>}/>
 		 			<Route path='/tasks/:taskId' element={ <TaskDetail {...tasks}{...setTasks}/> }/>
-		
 				{/* <Main tasks={tasks} setTasks={setTasks} /> */}
 				</Routes>
 				</Main>

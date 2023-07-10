@@ -6,7 +6,7 @@ import css from './Board.module.css'
 const Board  = ({ tasks, setTasks }) => {
 	// const { tasks, setTasks } = props
 
-	const addNewTask = (title, description)  => {
+	const addNewTask = (title, description) => {
 		const task = {
 			id: uniqid(),
 			title,
@@ -22,8 +22,9 @@ const Board  = ({ tasks, setTasks }) => {
 		<div className={css.board}>
 			{Object.values(LIST_TYPES).map(type => {
 				let listTasks = []
-				if (tasks);
+				if (tasks){
 					listTasks = tasks.filter(task => task.status === type)
+				}
 				return (
 					<List
 						key={LIST_COPY[type]}

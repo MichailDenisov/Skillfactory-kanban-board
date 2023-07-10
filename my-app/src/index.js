@@ -4,7 +4,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Main from './components/main/Main';
+// import Main from './components/main/Main';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 
 // const container = document.getElementById('root');
@@ -18,9 +18,9 @@ root.render(<App tab="home" />);
 // ReactDOM.render(
 //   <React.StrictMode>
 //       <React.StrictMode>
-    <BrowserRouter>
+  <BrowserRouter>
     <Routes>
-      <Route path="/" element={ <Main/> }>
+      <Route path="/" element={ <App/> }>
       </Route>
     </Routes>
   </BrowserRouter>
