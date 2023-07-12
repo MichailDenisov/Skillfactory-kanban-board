@@ -21,8 +21,9 @@ function App() {
 				<Header />
 				<Main>
 				<Routes>
-				<Route tasks={tasks} setTasks={<Main/>} />
-					<Route exact path='/'element={<Board {...tasks}{...setTasks}/>}/>
+				{/* <Route tasks={tasks} setTasks={<Main/>} /> */}
+					<Route path='/'element= {<Board {...tasks}{...setTasks}/>} />,
+					
 		 			<Route path='/tasks/:taskId' element={ <TaskDetail {...tasks}{...setTasks}/> }/>
 				{/* <Main tasks={tasks} setTasks={setTasks} /> */}
 				</Routes>
